@@ -1,0 +1,35 @@
+
+# ZEGGS
+train_data_path: "/apdcephfs/share_1290939/shaolihuang/ykcheng/MS_RP/AGDM/BEAT/semigest_emo_res/train/train_lmdb/train_lmdb"     # speaker_1_state_0
+val_data_path: "/apdcephfs/share_1290939/shaolihuang/ykcheng/MS_RP/AGDM/BEAT/semigest_emo_res/val/val_lmdb/val_lmdb"
+
+# 60 fps + normalized
+data_mean: "/apdcephfs/share_1290939/shaolihuang/ykcheng/MS_RP/AGDM/BEAT/semigest_emo_res/mean.npz"
+data_std: "/apdcephfs/share_1290939/shaolihuang/ykcheng/MS_RP/AGDM/BEAT/semigest_emo_res/std.npz"
+
+n_poses: 34     # 88 -> 20*60
+n_codes: 30
+motion_resampling_framerate: 15     # 20 -> 60
+subdivision_stride: 10      # 10 -> 200
+batch_size: 256       # 384 -> 32
+loader_workers: 12
+epochs: 500     # 500 -> 10
+save_per_epochs: 25     # 20 -> 1
+#gesture vae
+model_save_path: "./final_output/train_ges_vae"
+#语义对齐模块
+#model_save_path: "./final_output/final_model"
+name: "DiffuseStyleGesture"
+log_interval: 50
+weight_decay: 0.0
+lr_anneal_steps: 0
+#save_dir: "./zeggs_mymodel3_wavlm_new_1gpu"
+#save_dir: "./speakers_4_model"
+save_dir: "./speakers_4_model_wo_text"
+audio_feat: "wavlm"     # wav encoder; mfcc; wavlm
+
+lr: 0.00003     # 0.00003 ->
+betas: [0.5, 0.999]
+milestones: [100, 200]
+gamma: 0.1
+

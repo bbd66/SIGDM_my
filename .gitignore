@@ -1,0 +1,17 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# OS/editor artifacts
+.DS_Store
+Thumbs.db
+
+# Large local datasets (keep locally, do not track in git)
+dataset/finedance/
+
+# Generated artifacts
+sample_dir/
