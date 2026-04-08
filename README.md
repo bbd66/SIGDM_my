@@ -2,8 +2,8 @@
 
 > A diffusion-powered motion generation playground that unifies text-to-motion, action-to-motion, and speech-driven gesture pipelines in one research repo.
 
-[![Python](https://img.shields.io/badge/Python-3.9%2B-3776AB?logo=python&logoColor=white)](#quickstart)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.x-EE4C2C?logo=pytorch&logoColor=white)](#quickstart)
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](#quickstart)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.1.2-EE4C2C?logo=pytorch&logoColor=white)](#quickstart)
 [![Status](https://img.shields.io/badge/Project-Active-0A7F2E)](#)
 
 ## Paper-Style Snapshot
